@@ -1,0 +1,26 @@
+<% include ./partials/header %>
+<% include ./partials/nav %>
+<% include ./partials/admin %>
+
+<table class="table table-bordered container">
+  <thead>
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">Users</th>
+      <th scope="col">Actions</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% results.forEach(result => { %>
+    <tr>
+      <th scope="row"><%= result.id %></th>
+      <td><%= result.user %></td>
+      <td><a href="/admin/edituser/<%= result.id %>" class="btn btn-info">Edit</a></td>
+      <td><a href="/admin/deleteuser/<%= result.id %>" class="btn btn-danger">Delete</a></td>
+    </tr>
+    <% }); %>
+  </tbody>
+</table>
+
+<% include ./partials/footer %>

@@ -1,0 +1,58 @@
+<% include ./partials/header %>
+<% include ./partials/nav %>
+
+<h2>Login</h2>
+
+<div class="container">
+    <form id="loginform" method="POST" action="login">
+        <fieldset>
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" required>
+            <span id="usernameError" style="color: red;"></span>
+        </fieldset>
+        <fieldset>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required>
+            <span id="passwordError" style="color: red;"></span>
+        </fieldset>
+        <button type="submit" class="btn btn-primary" id="signup-btn">Login</button>
+    </form>
+</div>
+
+
+
+
+<script>
+    function validateInput(regExp, input, errorPlaceholder, errorMsg) {
+        if (regExp.test(input.value)) {
+            errorPlaceholder.innerHTML = '';
+            return true;
+        } else {
+            errorPlaceholder.innerHTML = errorMsg;
+            return false;
+        }
+    }
+
+    const form = document.getElementById('loginform');
+    form.addEventListener('submit', function (event) {
+        const username = document.getElementById('username');
+        const usernameError = document.getElementById('usernameError');
+        const password = document.getElementById('password');
+        const passwordError = document.getElementById('passwordError');
+
+        let success = true;
+
+        event.preventDefault();
+
+        if (!validateInput(/d@$/g, username, usernameError,'You need to have a capital letter in the beginnning of your username!')
+        || !validateInput(/.*\S.*/g, password, passwordError, 'Input field cant be empty!')) {
+            success = false;
+        } else {
+        }
+
+        if (success) {
+            form.submit();
+        }
+
+    });
+</script>

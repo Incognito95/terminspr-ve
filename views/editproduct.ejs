@@ -1,0 +1,27 @@
+<% include ./partials/header %>
+<% include ./partials/nav %>
+<% include ./partials/admin %>
+
+
+<div class="container">
+
+    <fieldset>
+        <label for="username">Name</label>
+        <input type="text" name="name" id="name" placeholder="" value="<%= result.name %>">
+    </fieldset>
+    <fieldset>
+        <label for="price">Price</label>
+        <input type="price" name="price" id="price" value="<%= result.price %>">
+    </fieldset>
+    <fieldset>
+        <label for="weight">Weight</label>
+        <input type="weight" name="weight" id="weight" value="<%= result.weight %>">
+    </fieldset>
+    <fieldset>
+        <label for="description">Description</label>
+        <textarea name="description" id="description" rows="10"class="form-control"><%= result.description %></textarea>
+    </fieldset>
+
+    <a href="/admin/saveproduct/<%= result.id %>" class="btn btn-primary">Save</a>
+
+</div>

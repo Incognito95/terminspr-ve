@@ -1,0 +1,33 @@
+<% include ./partials/header %>
+<% include ./partials/nav %>
+<% include ./partials/admin %>
+
+<table class="table table-bordered container">
+  <thead>
+    <tr>
+
+      <th scope="col">id</th>
+      <th scope="col">Products</th>
+      <th scope="col">Weight</th>
+      <th scope="col">Price</th>
+      <th scope="col">Description</th>
+      <th scope="col">Actions</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% results.forEach(result => { %>
+    <tr>
+      <th scope="row"><%= result.id %></th>
+      <td><%= result.name %></td>
+      <td><%= result.weight %></td>
+      <td><%= result.price %></td>
+      <td><%= result.description %></td>
+      <td><a href="/admin/editproduct/<%= result.id %>" class="btn btn-info">Edit</a></td>
+      <td><a href="/admin/deleteproduct/<%= result.id %>" class="btn btn-danger">Delete</td>
+    </tr>
+    <% }); %>
+  </tbody>
+</table>
+
+<% include ./partials/footer %>

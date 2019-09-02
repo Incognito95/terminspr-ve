@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#top-border {
+    background: rgb(112, 112, 112);
+    height: 54px;
+}
+
+a {
+    color: rgb(226, 113, 27);
+}
+
+a:hover {
+    color: rgb(226, 113, 27);
+}
+
+p,
+strong {
+    margin: 1px 25px;
+}
+
+.sub-header {
+    font-weight: bold;
+}
+
+strong {
+    color: rgb(226, 113, 27);
+}
+
+.h3_forside {
+    margin-top: 30px;
+    color: rgb(226, 113, 27);
+}
+
+hr {
+    border-top: dotted 1px;
+    width: 15%;
+    color: rgb(226, 113, 27);
+}
+
+.sofa {
+    width: 12%;
+    margin: 10px 12px;
+}
+
+.info {
+    margin-left: 100px;
+}
+
+.btn {
+    display: flex;
+    margin-top: 10px;
+}
+
+form {
+    margin: 10px 25px;
+}
+
+.news_letter,
+.contact_header {
+    margin-top: 70px;
+    color: rgb(226, 113, 27);
+}
+
+.telefon_info {
+    margin-top: 30px;
+}
+
+#email {
+    border: 1px #6c757d solid;
+}
+
+.grid-item {
+    padding: 20px;
+    text-align: center;
+    display: grid;
+    grid-column-gap: 50px;
+    grid-template-columns: auto auto auto;
+}

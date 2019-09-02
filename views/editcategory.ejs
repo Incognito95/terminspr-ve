@@ -1,0 +1,25 @@
+<% include ./partials/header %>
+<% include ./partials/nav %>
+<% include ./partials/admin %>
+
+
+
+<div class="container">
+    <fieldset>
+        <label for="product">Products</label>
+        <div class="input-group mb-3">
+            <select class="custom-select" id="inputGroupSelect01">
+                <option value="1"><%= result.name %></option>
+                <option value="2"><%= result.name %></option>
+            </select>
+        </div>
+    </fieldset>
+    <fieldset>
+        <label for="description">Description</label>
+        <textarea name="description" id="description" rows="10" class="form-control"><%= result.description %></textarea>
+    </fieldset>
+    <a href="/admin/savecategory/<%= result.id %>" class="btn btn-primary save-btn">Save</a>
+
+</div>
+
+

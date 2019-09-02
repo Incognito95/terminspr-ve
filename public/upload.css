@@ -1,0 +1,32 @@
+h3 {
+    padding-top: 70px;
+}
+
+#finalimage {
+    margin-top: 30px;
+}
+
+.previewImage {
+    width: 30%;
+}
+
+#upload-btn {
+    background: #c7ede6;
+    border: none;
+    margin: 20px 12px;
+}
+
+.upload-img {
+    width: 50px;
+}
+
+label {
+    margin-left: 10px;
+}
+
+.shadow {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
