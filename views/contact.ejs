@@ -2,17 +2,28 @@
 <% include ./partials/nav %>
 <% include ./partials/sidebar %>
 
-<form action="">
 
-    <label for="">Navn</label>
-    <input type="text">
-    <label for="">Adresse</label>
-    <input type="text">
-    <label for="">Telefon</label>
-    <input type="text">
-    <label for="">E-mail</label>
-    <input type="text">
-    <label for="">Kommentar</label>
-    <textarea name="" id="" cols="30" rows="10">Send</textarea>
 
+<div class="opening-hours">
+    Åbningstider:
+
+    Mandag-Torsdag fra 10.00-17.30
+    Fredag fra 10.00-18.00
+    Lørdag fra 9.30-14.00
+
+</div>
+
+<form action="" id="contact-form">
+
+    <label for="navn">Navn</label>
+    <input type="navn" class="navn" required>
+    <label for="adresse">Adresse</label>
+    <input type="adresse" required>
+    <label for="telefon">Telefon</label>
+    <input type="telefon" required>
+    <label for="email">E-mail</label>
+    <input type="email" required>
+    <label for="komentar">Kommentar</label>
+    <textarea name="komentar" id="" cols="30" rows="10" required></textarea>
+    <button type="submit" class="btn btn-light">Send</button>
 </form>

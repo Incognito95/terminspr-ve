@@ -3,17 +3,29 @@
     padding: 0;
 }
 
+body {
+    font-family: Verdana;
+}
+
 #top-border {
     background: rgb(112, 112, 112);
     height: 54px;
 }
 
 a {
-    color: rgb(226, 113, 27);
+    color: #FF7200;
+    font-family: Verdana;
+    font-size: 11px;
+}
+
+li {
+    border: 1px solid #FF7200;
+    border-bottom: none;
+
 }
 
 a:hover {
-    color: rgb(226, 113, 27);
+    color: #FF7200;
 }
 
 p,
@@ -21,23 +33,24 @@ strong {
     margin: 1px 25px;
 }
 
-.sub-header {
+.sub-header-sidebar {
+    font-size: 10pt;
     font-weight: bold;
 }
 
 strong {
-    color: rgb(226, 113, 27);
+    color: #FF7200;
 }
 
-.h3_forside {
+.header {
     margin-top: 30px;
-    color: rgb(226, 113, 27);
+    color: #FF7200;
 }
 
 hr {
     border-top: dotted 1px;
     width: 15%;
-    color: rgb(226, 113, 27);
+    color: #FF7200;
 }
 
 .sofa {
@@ -58,10 +71,25 @@ form {
     margin: 10px 25px;
 }
 
+input,
+textarea {
+    display: flex;
+
+}
+
+label {
+    margin-top: 20px;
+}
+
+
+.container {
+    margin: -900px 300px;
+}
+
 .news_letter,
 .contact_header {
     margin-top: 70px;
-    color: rgb(226, 113, 27);
+    color: #FF7200;
 }
 
 .telefon_info {
@@ -72,10 +100,36 @@ form {
     border: 1px #6c757d solid;
 }
 
-.grid-item {
-    padding: 20px;
-    text-align: center;
-    display: grid;
-    grid-column-gap: 50px;
-    grid-template-columns: auto auto auto;
+h6 {
+    color: #FF7200;
+    margin-left: 20px;
+    font-size: 10pt;
 }
+
+.line {
+    width: 70%;
+    margin-top: 105px;
+}
+
+.line-news {
+    margin-top: 103px;
+    width: 93%;
+}
+
+.dummy-text {
+    margin: -1094.7px 250px;
+    line-height: 14px;
+    white-space: pre;
+    font-size: 10pt;
+}
+
+.opening-hours {
+    white-space: pre;
+    margin: -910px 249px;
+}
+
+#contact-form {
+    margin: 900px 270px;
+}
+
+#search-form {}
